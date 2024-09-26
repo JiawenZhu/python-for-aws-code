@@ -1,0 +1,20 @@
+Commands to update Cloud9 environment to Python 3.9
+
+1) sudo yum -y update
+2) sudo yum -y groupinstall development
+3) sudo yum -y install zlib-devel openssl-devel
+
+# Depends of python version you're installing
+4) wget https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz
+5) tar xzf Python-3.9.5.tgz
+6) cd Python-3.9.5
+
+7) ./configure --enable-optimizations
+8) make
+9) sudo make altinstall
+10) python 3.9 -V
+11) alias python-python3.9
+12) echo 'alias python-python3.9' >> ~/.bashrc
+13) source ~/.bashrc
+
+14) python --version
